@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { StyleSheet, Text, View, Alert, Dimensions, TextInput, Button, ScrollView } from 'react-native';
+import { StyleSheet, Text, View, Alert, Dimensions, TextInput, Button, ScrollView, Table, Row, Rows } from 'react-native';
 
 var {height, width} = Dimensions.get('window');
 
@@ -17,6 +17,17 @@ export default class App extends Component {
       number: "1",
       texts_visible: true,
       authors_visible: false,
+      hasNotes: false,
+      professor_visible: false,
+      exercises_visible: false,
+      headTable: ['Syntactic', 'Description', 'Examples'],
+      professorMatrix: [
+        ["SC1", "Use of in order to in negative sentences.", "I left home early in order to not to be late for the appointment"],
+        ["SC2", 'Use ING like a noun or as part of a "noun', "Smoke is forbiddenSmoking is forbidden. the second step"],
+        ["SC3", "", ""],
+        ["SC4", "", ""],
+        ["SC5", "", ""]
+      ],
     };
   }
   
@@ -126,12 +137,23 @@ export default class App extends Component {
       return (
         <Text style={styles.authors}>{this.state.authors}</Text>
       );
-    }else
+    }else if(this.state.exercises_visible)
     {
       return (
         <ScrollView style={styles.scrollView}>
           <Text style={styles.exercises} selectable>{this.state.exercises}</Text>
         </ScrollView>
+      );
+    }else if(this.state.hasNotes)
+    {
+      <Text style={styles.notes}>{this.state.note}</Text>
+    }else
+    {
+      return (
+        <Table borderStyle={{borderWidth: 1, borderColor: '#ffa1d2'}}>
+          <Row data={this.state.headTable} style={styles.headStyle} textStyle={styles.tableText}/>
+          <Rows data={this.state.professorMatrix} textStyle={styles.tableText}/>
+        </Table>
       );
     }
   }
@@ -152,10 +174,10 @@ export default class App extends Component {
       case "right":
         break;
       case "professor":
-        this.setState({number: "1"});
-        this.setState({use: "Use indentation in each paragraph. This is important as a visual aid so as the reader knows where the paragraphs begin."})
-        this.setState({example: "One day when I was at home, my parents began to cry."});
-        this.setState({correction: "https://www.google.com"})
+        this.setState({
+          professor_visible: true,
+          texts_visible : false
+        })
         break;
       case "authors":
         var authors = "Autoras: Jacqueline García Botero\n"+
@@ -263,7 +285,9 @@ export default class App extends Component {
   {
     this.setState({
       texts_visible: true,
-      authors_visible: false
+      authors_visible: false,
+      exercises_visible: false,
+      hasNotes: false,
     })
   }
 
@@ -275,7 +299,7 @@ export default class App extends Component {
     }else if(isSemantic)
     {
       Alert.alert("Semantic.");
-    }else
+    }else if(isPragmatic)
     {
       Alert.alert("Pragmatic.");
     }
@@ -299,7 +323,7 @@ const styles = StyleSheet.create({
   },
   contentBox: {
     backgroundColor: '#ffff00',
-    height: height-85,
+    height: height-75,
     width: width-50
   },
   box: {
@@ -339,19 +363,27 @@ const styles = StyleSheet.create({
     width: width-100,
   },
   texts: {
-    height: (height-90)/3-30,
+    height: (height-75)/3-30,
     paddingLeft: 15,
     fontSize: 18,
     backgroundColor: '#ffffff',
     width: width-100,
   },
   uses: {
-    height: (height-90)/3,
+    height: (height-75)/3,
     paddingLeft: 5,
     color: '#ff0000',
     fontSize: 18,
     backgroundColor: '#ffffff',
     width: width-100,
+  },
+  notes: {
+    backgroundColor: '#ffff00'
+  },
+  authors: {
+    textAlign: 'center',
+    textAlignVertical: 'center',
+    height: height-75
   },
   boxTop: {
     flexDirection: 'row',
@@ -364,4 +396,12 @@ const styles = StyleSheet.create({
     width: (width-100)/3,
     height: 40,
   },
+  headStyle: { 
+    height: 50,
+    alignContent: "center",
+    backgroundColor: '#ffe0f0'
+  },
+  tableText: { 
+    margin: 10
+  }
 });
