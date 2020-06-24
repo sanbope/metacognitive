@@ -125,14 +125,14 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   boxNotifications: {
-    height: 40,
+    height: 25,
     width: width,
     flexDirection: 'column',
-    backgroundColor: '#2196F3'
+    backgroundColor: '#aaaaaa'
   },
   contentBox: {
-    backgroundColor: '#204010',
-    height: height-90,
+    backgroundColor: '#ffff00',
+    height: height-85,
     width: width-50
   },
   box: {
