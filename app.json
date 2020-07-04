@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "metacognitive",
+    "name": "Metacognitive",
     "slug": "metacognitive",
     "platforms": [
       "ios",
@@ -13,7 +13,7 @@
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#0088ff"
     },
     "updates": {
       "fallbackToCacheTimeout": 0
@@ -23,6 +23,12 @@
     ],
     "ios": {
       "supportsTablet": true
-    }
+    },
+    "android": {
+      "package": "com.SBGames.metacognitive",
+      "versionCode": 1
+    },
+    "description": "",
+    "githubUrl": "https://github.com/sanbope/metacognitive"
   }
 }
