@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
-import { StyleSheet, Text, View, Alert, Dimensions, TextInput, Button, ScrollView, Slider, Table, Row, Rows, AsyncStorage } from 'react-native';
+import { StyleSheet, Text, View, Alert, Dimensions, TextInput, Button, ScrollView, Slider, AsyncStorage } from 'react-native';
 import Syntactic from './syntactic'
 import Pragmatic from './pragmatic'
 import Semantic from './semantic'
+import Professor from './professor'
 
 var {height, width} = Dimensions.get('window');
 
@@ -15,6 +16,7 @@ var isSemantic = false;
 let syntacticConst;
 let pragmaticConst;
 let semanticConst;
+let professorConst;
 
 export default class App extends Component {
   constructor()
@@ -23,6 +25,7 @@ export default class App extends Component {
     syntacticConst = new Syntactic();
     pragmaticConst = new Pragmatic();
     semanticConst = new Semantic();
+    professorConst = new Professor();
     var note = syntacticConst.getNotes()[numberVar-1];
     this.state = {
       number: "1",
@@ -33,7 +36,6 @@ export default class App extends Component {
       exercises_visible: false,
       config_visible: false,
       headTable: ['Syntactic', 'Description', 'Examples'],
-      professorMatrix: this.getProfessorMatrix(),
       customBackground: "#ffffff",
 
       use: syntacticConst.getUses()[numberVar-1],
@@ -213,7 +215,7 @@ export default class App extends Component {
     {
       return (
         <ScrollView style={styles.scrollView}>
-          <Text style={styles.exercises} selectable>{this.state.exercises}</Text>
+          <Text style={{fontSize: 13}} selectable>{this.state.exercises}</Text>
         </ScrollView>
       );
     }else if(this.state.notes_visible)
@@ -225,11 +227,20 @@ export default class App extends Component {
       );
     }else if(this.state.professor_visible)
     {
+      let returnValue = professorConst.getMatrix().map(eachItem =>
+        <View style={{flexDirection: 'row'}}>
+            <Text onPress={() => this.goToChallenge(eachItem[0])} selectable style={this.getProfessorStyle(eachItem[1])}>
+              {eachItem[0]}
+            </Text>
+            <Text onPress={() => this.goToChallenge(eachItem[0])} selectable style={this.getProfessorStyle(eachItem[1])}>
+              {eachItem[1]}
+            </Text>
+        </View>
+      );
       return (
-        <Table borderStyle={{borderWidth: 1, borderColor: '#ffa1d2'}}>
-          <Row data={this.state.headTable} style={styles.headStyle} textStyle={styles.tableText}/>
-          <Rows data={this.state.professorMatrix} textStyle={styles.tableText}/>
-        </Table>
+        <ScrollView>
+          {returnValue}
+        </ScrollView>
       );
     }else if(this.state.config_visible)
     {
@@ -242,6 +253,31 @@ export default class App extends Component {
           <Text style={{paddingLeft: 10}}>Value: {this.state.customBackground}</Text>
         </View>
       );
+    }
+  }
+
+  goToChallenge = (item) =>
+  {
+    if(item.includes("#"))
+    {
+      var type = item.split("#")[0];
+      var n = item.split("#")[1];
+
+      this.buttonActionPerformed(type == "SY" ? "syntactic" : type == "P" ? "pragmatic" : "semantic");
+      this.setState({number: n});
+      numberVar = n;
+      this.updateChallenge();
+    }
+  }
+
+  getProfessorStyle = (item) =>
+  {
+    if(item == 'DESCRIPTION')
+    {
+      return styles.professorTitle;
+    }else
+    {
+      return styles.professor;
     }
   }
 
@@ -280,8 +316,6 @@ export default class App extends Component {
 
   sliderValueChange = (value) =>
   {
-    //this.setState({slider: value});
-
     var v = parseInt(value*105);
     var hex = "#ffff";
 
@@ -337,6 +371,10 @@ export default class App extends Component {
         this.updateChallenge();
         break;
       case "professor":
+        this.setState({
+          texts_visible: false,
+          professor_visible: true
+        });
         break;
       case "config":
         this.setState({
@@ -356,7 +394,7 @@ export default class App extends Component {
         this.setState({authors_visible : true});
         break;
       case "exercises":
-        var exercises = "ejercicios\n\n"+
+        var exercises = "exercises:\n\n"+
 
                         "Exercises about grammar (mixed):\n"+
                         "http://www.really-learn-english.com/easy-english-grammar.html\n"+
@@ -436,17 +474,6 @@ export default class App extends Component {
     }
   }
 
-  getProfessorMatrix = () =>
-  {
-    return [
-      ["SC1", "Use of in order to in negative sentences.", "I left home early in order to not to be late for the appointment"],
-      ["SC2", 'Use ING like a noun or as part of a "noun', "Smoke is forbiddenSmoking is forbidden. the second step"],
-      ["SC3", "", ""],
-      ["SC4", "", ""],
-      ["SC5", "", ""]
-    ];
-  }
-
   onChangeText = text =>
   {
     this.cleanVisibleStates();
@@ -483,6 +510,7 @@ export default class App extends Component {
       exercises_visible: false,
       notes_visible: false,
       config_visible: false,
+      professor_visible: false
     })
   }
 
@@ -567,7 +595,7 @@ const styles = StyleSheet.create({
   },
   boxRight: {
     flexDirection: 'column',
-    height: height,
+    height: height-25,
     width: width-100,
     //backgroundColor: background
   },
@@ -628,7 +656,21 @@ const styles = StyleSheet.create({
     alignContent: "center",
     backgroundColor: '#ffe0f0'
   },
-  tableText: { 
-    margin: 10
+  professor: {
+    width: (width-100)/2,
+    height: 35,
+    fontSize: 13,
+    textAlign: 'center',
+    textAlignVertical: 'center',
+    borderWidth: 2,
+    borderColor: '#000000',
+  },
+  professorTitle: {
+    width: (width-100)/2,
+    textAlign: 'center',
+    textAlignVertical: 'center',
+    borderWidth: 2,
+    backgroundColor: '#5ff',
+    borderColor: '#000000',
   }
 });

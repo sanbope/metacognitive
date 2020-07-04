@@ -80,12 +80,12 @@ Example: the life is too short.#
 Correction: life is too short.#
 Note: null#
 DIVPREGUNTAS
-Use Consists of when something is composed or made up of something else.#
+Use of "of": When something is composed or made up of something else.#
 Example: the story consists in six parts.#
 Correction: the story consists of six parts.#
 Note: null#
 DIVPREGUNTAS
-Use consist in when explaining how something works.#
+Use of "in": When explaining how something works.#
 Example: Meditation consists of attentive watchfulness.#
 Correction: Meditation consists in attentive watchfulness.#
 Note: null#
