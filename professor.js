@@ -41,7 +41,7 @@ export default class Professor
             ["SY#35", 'Relative clauses.'],
             ["SY#36", 'Everybody, nobody.'],
             ["SY#37", 'Synonyms (not redundancy).'],
-            ["SY#38", 'Color.'],
+            ["SY#38", 'Colon.'],
             ["SY#39", 'Omit.'],
             ["SY#40", 'Capitalization.'],
             ["SY#41", 'Period at the end of a sentence.'],

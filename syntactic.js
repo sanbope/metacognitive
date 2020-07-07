@@ -1,7 +1,5 @@
-export default class Syntactic
-{
-    constructor()
-    {
+export default class Syntactic {
+    constructor() {
         this.uses = [
             'Be careful when using in order to plus a negation.',
             'The –ing form can be used like a noun or be part of a “noun phrase”.',
@@ -33,17 +31,13 @@ export default class Syntactic
             'The word advice is never pluralized.',
             'Avoid exact translation from the Spanish language in regards to expressing possession.',
             'Avoid long sentences. Instead, make use of connectors and punctuation marks to avoid misunderstandings or incoherent sentences.',
-            'Uses of commas.\n'+
-            'Use a comma when beginning sentences with introductory words such as well, now, both or yes.\n'+
-            'Use a comma to separate two strong clauses joined by a coordinating conjunction--and, or, but, for, nor. You can omit the comma if the clauses are both short.\n'+
-            'When the information in the clause is not necessary to complete your main idea, insert a comma to separate it from the rest of the sentence.\n'+
-            'Use a comma or commas with transitional expressions (however, therefore, moreover, for example, on the other hand, in fact, so etc.)',
+            'Uses of commas.',
             'Rules to develop a topic sentence. A topic sentence is generally written at the beginning of the paragraph, it should contain a topic and a controlling idea.',
             'Word order. Pay attention to sentence structure. Sometimes, the word is not located in the correct position.',
             'A paragraph consists of several sentences that are grouped together. It should be a unity. Do not leave space between them.',
             'Relative clauses.\n'+
             'Pay attention to the correct relative clause used in your sentence.\n'+
-            '-	who:people\n'+
+            '-	who: people\n'+
             '-	which: things\n'+
             '-	whose: to express possession (people)\n'+
             '-	that: things and people\n',
@@ -51,22 +45,9 @@ export default class Syntactic
             'Use of synonyms.\n'+
             'Use a different word so that your paragraph does not seem redundant.\n',
             'Use of colon\n'+
-            'Use a colon instead of a semicolon between two sentences when the second sentence explains or illustrates the first sentence\n',
+            'Use a colon instead of a semicolon between two sentences when the second sentence explains or illustrates the first one\n',
             'Omit some words; they are not necessary in your sentence.',
-            'Capitalization\n'+
-            'Capitalize the pronoun I.\n'+
-            'Capitalize the first letter of the first word of each sentence.\n'+
-            'Capitalize the first letter of names of people, organizations, and places.\n'+
-            'Capitalize the first letter of adjectives that are made from the names of people and places.\n'+
-            'Capitalize initials\n'+
-            'Capitalize the first letter of directions only when they are used to designate actual places, not when they point in a direction.\n'+
-            'Capitalize the first letter of the names of months and the days of the week.\n'+
-            "Capitalize the official title of a person (including abbreviations), but only when you use it with the person's name.\n"+
-            'Capitalize words used as names or parts of names.\n'+
-            'Capitalize the first letter of important words in a title of a book, magazine, story, essay, etc.\n'+
-            'Capitalize historical events and documents.\n'+
-            'Capitalize the name of languages, races, nationalities, and religions.\n'+
-            'Capitalize acronyms. (An acronym is a word formed by the first, or first few, letters of words in a long name of an organization.)\n',
+            'Capitalization',
             'Use a period [ . ] at the end of a sentence that makes a statement.',
             'There is a missing word in your sentence.',
             'Do not put period to your title.',
@@ -80,7 +61,7 @@ export default class Syntactic
             'When using the word EXIST, use the word THERE before it.',
             'Be careful with the use of superlatives (-est) and comparatives (er). When a word is more than 2 syllabus you add (MOST/MORE); in one-syllable word we use (EST/ER), but not both at the same time.',
         ];
-        
+            
         this.examples = [
             'I left home early in order to not to be late for the appointment.',
             'Smoke is forbidden. Speak to an audience is always stressful.',
@@ -151,7 +132,7 @@ export default class Syntactic
             'Exist many types of friends.',
             'you are more shorter than me.',
         ];
-        
+            
         this.corrections = [
             'I left home early in order not to be late for the appointment.',
             'Smoking is forbidden. Speaking to an audience is always stressful.',
@@ -165,7 +146,8 @@ export default class Syntactic
             'Some people write with a word processor; others write with a pen or pencil.',
             'are you happy? (English)\n'+
             'I’m tired! (English)\n',
-            'One day when I was at home, my parents began to cry.',
+            '        One day when I was at home,\n'+
+            'my parents began to cry.\n',
             'It consists on doing a nice job.',
             'life is too short.',
             'the story consists of six parts.',
@@ -221,7 +203,7 @@ export default class Syntactic
             'There exist many types of friends.',
             'you are shorter than me.',
         ];
-        
+            
         this.notes = [
             'null',
             'null',
@@ -309,7 +291,7 @@ export default class Syntactic
             '-	mouse = mice\n'+
             '-	fish= fish\n'+
             '-	sheep= sheep\n'+
-            '• Some rules to remember\n'+
+            '• Some rules to rememeber\n'+
             'With words that end in a consonant and a Y, change the Y to an I and add ES just if the Y is preceded by a consonant.\n'+
             'EXAMPLE: baby = babies BUT galley = galleys\n'+
             '• Plurals of words that end in -f or -fe\n'+
@@ -324,7 +306,10 @@ export default class Syntactic
             'null',
             'null',
             'null',
-            'null',
+            'Use a comma when beginning sentences with introductory words such as well, now, both or yes.\n'+
+            'Use a comma to separate two strong clauses joined by a coordinating conjunction--and, or, but, for, nor. You can omit the comma if the clauses are both short.\n'+
+            'When the information in the clause is not necessary to complete your main idea, insert a comma to separate it from the rest of the sentence.\n'+
+            'Use a comma or commas with transitional expressions (however, therefore, moreover, for example, on the other hand, in fact, so etc.)\n',
             'null',
             'null',
             'null',
@@ -352,7 +337,19 @@ export default class Syntactic
             'Note that defining (restrictive) and non-defining (non-restrictive) clauses must be introduced by the appropriate relative pronoun (who, which, that, whose).\n'+
             'Defining (restrictive) clauses should NEVER be set off with commas and non-defining (non-restrictive) clauses ALWAYS should.\n'+
             'NEVER use “that” with a non-defining clause.\n',
-            'null',
+            'Capitalize the pronoun I.\n'+
+            'Capitalize the first letter of the first word of each sentence.\n'+
+            'Capitalize the first letter of names of people, organizations, and places.\n'+
+            'Capitalize the first letter of adjectives that are made from the names of people and places.\n'+
+            'Capitalize initials\n'+
+            'Capitalize the first letter of directions only when they are used to designate actual places, not when they point in a direction.\n'+
+            'Capitalize the first letter of the names of months and the days of the week.\n'+
+            "Capitalize the official title of a person (including abbreviations), but only when you use it with the person's name.\n"+
+            'Capitalize words used as names or parts of names.\n'+
+            'Capitalize the first letter of important words in a title of a book, magazine, story, essay, etc.\n'+
+            'Capitalize historical events and documents.\n'+
+            'Capitalize the name of languages, races, nationalities, and religions.\n'+
+            'Capitalize acronyms. (An acronym is a word formed by the first, or first few, letters of words in a long name of an organization.)\n',
             'null',
             'null',
             'null',
@@ -368,28 +365,23 @@ export default class Syntactic
         ];
     }
 
-    getUses = () =>
-    {
+    getUses = () => {
         return this.uses;
     }
 
-    getExamples = () =>
-    {
+    getExamples = () => {
         return this.examples;
     }
 
-    getCorrections = () =>
-    {
+    getCorrections = () => {
         return this.corrections;
     }
 
-    getNotes = () =>
-    {
+    getNotes = () => {
         return this.notes;
     }
 
-    getSize = () =>
-    {
+    getSize = () => {
         return this.uses.length;
     }
 }

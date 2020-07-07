@@ -28,6 +28,7 @@ export default class App extends Component {
     professorConst = new Professor();
     var note = syntacticConst.getNotes()[numberVar-1];
     this.state = {
+      started: false,
       number: "1",
       texts_visible: true,
       authors_visible: false,
@@ -44,6 +45,13 @@ export default class App extends Component {
       note: note,
       hasNotes: note !== "null",
     };
+  }
+
+  getStartMessage = () => {
+    return "METACOGNITIVE CHALLENGES TO CORRECT YOUR PARAGRAPHS AND ESSAYS\n"+
+    "Based on the following explanations, please correct your own mistakes.\n"+
+    "We want you to enhance your understanding and awareness about English rules\n"+
+    "to contribute with the development of good writing skills.";
   }
 
   _storeData = async () => {
@@ -75,6 +83,16 @@ export default class App extends Component {
   
   render()
   {
+    if(!this.state.started)
+    {
+      return (
+        <Text
+          onPress={() => this.buttonActionPerformed("started")}
+          style={styles.startedButton}
+          accessibilityLabel="Started Button"
+        >{this.getStartMessage()}</Text>
+      );
+    }
     return (
       <View style={styles.container}>
         <View style={styles.boxNotifications}></View>
@@ -250,7 +268,7 @@ export default class App extends Component {
             value={this.state.slider}
             onValueChange={(value) => this.sliderValueChange(value)}
           />
-          <Text style={{paddingLeft: 10}}>Value: {this.state.customBackground}</Text>
+          <Text style={{paddingLeft: 10}}>Ajustar fondo amarillo: {this.state.customBackground}</Text>
         </View>
       );
     }
@@ -316,7 +334,7 @@ export default class App extends Component {
 
   sliderValueChange = (value) =>
   {
-    var v = parseInt(value*105);
+    var v = parseInt(value*(105));
     var hex = "#ffff";
 
     if(v >= 100)
@@ -362,6 +380,11 @@ export default class App extends Component {
     this.cleanVisibleStates();
     switch(button)
     {
+      case "started":
+        this.setState({
+          started: true,
+        });
+        break;
       case "left":
         this.onChangeText(""+(parseInt(this.state.number)-1));
         this.updateChallenge();
@@ -650,6 +673,14 @@ const styles = StyleSheet.create({
   topButtons: {
     width: (width-100)/3,
     height: 40,
+  },
+  startedButton: {
+    height: height,
+    alignContent: "center",
+    textAlign: "center",
+    textAlignVertical: "center",
+    color: "#000000",
+    backgroundColor: "#eeeeee",
   },
   headStyle: { 
     height: 50,

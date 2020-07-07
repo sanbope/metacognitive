@@ -7,7 +7,7 @@
       "android",
       "web"
     ],
-    "version": "1.0.0",
+    "version": "1.2.0",
     "orientation": "landscape",
     "icon": "./assets/icon.png",
     "splash": {
@@ -26,7 +26,7 @@
     },
     "android": {
       "package": "com.SBGames.metacognitive",
-      "versionCode": 1
+      "versionCode": 3
     },
     "description": "",
     "githubUrl": "https://github.com/sanbope/metacognitive"
