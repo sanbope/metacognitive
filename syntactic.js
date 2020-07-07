@@ -67,18 +67,18 @@ export default class Syntactic {
             'Smoke is forbidden. Speak to an audience is always stressful.',
             'After to hang out with my friends, I went to my house.\n'+
             'She is here for plan the party.\n',
-            'the invention of perfection create lots of stereotypes.\n'+
+            'The invention of perfection create lots of stereotypes.\n'+
             'children should talk to her parents\n',
-            'beggining',
+            'Beggining',
             'This customs are very remarkable.',
             'I like swimming, studying and to listen to music.',
             'Some people write with a word processor, others write with a pen or pencil.',
             '¿are you happy? (Spanish)\n'+
             '¡I’m tired! (Spanish)\n',
             'One day when I was at home, my parents began to cry.',
-            'consists on doing a nice job',
-            'the life is too short.',
-            'the story consists in six parts.',
+            'Consists on doing a nice job',
+            'The life is too short.',
+            'The story consists in six parts.',
             'Meditation consists of attentive watchfulness.',
             'My fear of the dark.',
             'There are, of course, many more things to visit while you are in Mexico.',
@@ -86,16 +86,16 @@ export default class Syntactic {
             'This decision depends in you',
             'The author of Touched, Jane Straus, wrote in the first chapter: "Georgia went back to her bed and stared at the intricate patterns of burned moth wings in the translucent glass of the overhead light".',
             'When I was in Tolima, I used to eat tamales all the time.',
-            'the girls are beautifuls.\n'+
+            'The girls are beautifuls.\n'+
             'they are very differents.\n',
             'I have a blue plastic old car.',
             'I am agree with you.',
-            'the most of the people are taking on line classes.',
+            'The most of the people are taking on line classes.',
             'The river overflowed its banks because it rained.',
-            'cats have seven lifes.',
-            'there are three easy steps to lose.',
+            'Cats have seven lifes.',
+            'There are three easy steps to lose.',
             'I have lots of advices to tell you.',
-            'this is the life of my son.',
+            'This is the life of my son.',
             'When I was a child my parents tried to control me all the time because I was a really bad boy and that is why my adulthood has been represented with numerous psychological problems that do not allow me to become in an independent person.',
             'Yes I do need that report.\n'+
             "Well I never thought I'd live to see the day.\n"+
@@ -112,14 +112,14 @@ export default class Syntactic {
             'Do you see the shoe where is on the roof?\n'+
             'Do you know the boy which mother is a nurse?\n'+
             'I don’t like the table who stands in the kitchen.\n',
-            'nobody want coffee.\n'+
+            'Nobody want coffee.\n'+
             'Everybody are invited.\n',
             "The classes are sometimes very boring; these classes represent a bad teacher's methodology.",
             'My biggest dream; having a nice wife.',
-            'in making mistakes is a huge disadvantage',
+            'In making mistakes is a huge disadvantage',
             'The united states is my favorite country.',
             'Technology creates more dependent people everyday',
-            'you must the next steps.',
+            'You must the next steps.',
             'Types of students.',
             'I like eating pizza, hamburger, etc.',
             'When a person has eating disorders, it may suffer a lot of problems.',
@@ -130,7 +130,7 @@ export default class Syntactic {
             'I have an car.\n',
             'Give me an apples.',
             'Exist many types of friends.',
-            'you are more shorter than me.',
+            'You are more shorter than me.',
         ];
             
         this.corrections = [
@@ -138,19 +138,19 @@ export default class Syntactic {
             'Smoking is forbidden. Speaking to an audience is always stressful.',
             'After hanging out with my friends, I went to my house.\n'+
             'She is here for planning the party.\n',
-            'the invention of perfection creates lots of stereotypes.\n'+
+            'The invention of perfection creates lots of stereotypes.\n'+
             'children should talk to their parents.\n',
-            'beginning',
+            'Beginning',
             'These customs are very remarkable.',
             'I like swimming, studying and listening to music.',
             'Some people write with a word processor; others write with a pen or pencil.',
-            'are you happy? (English)\n'+
+            'Are you happy? (English)\n'+
             'I’m tired! (English)\n',
-            '        One day when I was at home,\n'+
+            '.        One day when I was at home,\n'+
             'my parents began to cry.\n',
             'It consists on doing a nice job.',
-            'life is too short.',
-            'the story consists of six parts.',
+            'Life is too short.',
+            'The story consists of six parts.',
             'Meditation consists in attentive watchfulness.',
             'My fear of the dark has made my life miserable.',
             'There are, of course, many more things to visit while you are in Mexico, but the beact at Progreso, the Aztec ruin, and the famous monument represent some of the more significant and beautiful sights to see, When you go to Mexico, visit these sights and you will be graranteed a fond memory after you go home.',
@@ -163,12 +163,12 @@ export default class Syntactic {
             'I have an old blue plastic car.',
             'I am in agreement with you.\n'+
             'I agree with you.\n',
-            'most of the people are taking on line classes.',
+            'Most of the people are taking on line classes.',
             'The river overflowed its banks because of the rain.',
-            'cats have seven lives.',
-            'there are three easy steps to lose weight; to lose money.',
+            'Cats have seven lives.',
+            'There are three easy steps to lose weight; to lose money.',
             'I have lots of advice to tell you.',
-            'this is my son’s life.',
+            'This is my son’s life.',
             'When I was a child, my parents tried to control me all the time since I was a really bad boy. For that reason, my adulthood has been represented with numerous psychological problems that do not allow me to become in an independent person.',
             'Yes, I do need that report.\n'+
             "Well, I never thought I'd live to see the day.\n"+
@@ -183,14 +183,14 @@ export default class Syntactic {
             'Do you see the shoe which is on the roof?\n'+
             'Do you know the boy whose mother is a nurse?\n'+
             'I don’t like the table that stands in the kitchen.\n',
-            'nobody wants coffee.\n'+
+            'Nobody wants coffee.\n'+
             'Everybody is invited.\n',
             "The classes are sometimes very boring; these lessons represent a bad teacher's methodology.",
             'My biggest dream: having a nice wife.',
-            'making mistakes is a huge disadvantage',
+            'Making mistakes is a huge disadvantage',
             'The United States is my favorite country.',
             'Technology creates more dependent people everyday.',
-            'you must follow the next steps.',
+            'You must follow the next steps.',
             'Types of students',
             'I like eating pizza, hamburger, hotdog, etc.',
             'When a person has eating disorders, he/she may suffer a lot of problems.',
@@ -201,7 +201,7 @@ export default class Syntactic {
             'I have a car.\n',
             'Give me some apples.',
             'There exist many types of friends.',
-            'you are shorter than me.',
+            'You are shorter than me.',
         ];
             
         this.notes = [
@@ -362,7 +362,7 @@ export default class Syntactic {
             'null',
             'null',
             'null',
-        ];
+        ];            
     }
 
     getUses = () => {

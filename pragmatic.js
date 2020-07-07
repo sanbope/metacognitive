@@ -14,7 +14,7 @@ export default class Pragmatic
             'It doesn´t matter',
             'My worst day',
             '(when writing to your boss) Hi jhon! What’s up?',
-            'we need to do something to avoid plagiarism. (argumentative essay)',
+            'We need to do something to avoid plagiarism. (argumentative essay)',
             "I don't agree with euthanasia.",
         ];
             

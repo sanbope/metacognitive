@@ -32,15 +32,15 @@ Note: LIST OF PREPOSITIONS:
 -	Without#
 DIVPREGUNTAS
 Agreement: pay attention to the conjugation of the verbs; the object pronouns which replace the subject pronouns are also important.#
-Example: the invention of perfection create lots of stereotypes.
+Example: The invention of perfection create lots of stereotypes.
 children should talk to her parents#
-Correction: the invention of perfection creates lots of stereotypes.
+Correction: The invention of perfection creates lots of stereotypes.
 children should talk to their parents.#
 Note: null#
 DIVPREGUNTAS
 Spelling problem.#
-Example: beggining#
-Correction: beginning#
+Example: Beggining#
+Correction: Beginning#
 Note: null#
 DIVPREGUNTAS
 Correct the demonstrative: that (singular-far) / those(plural-far) / this (singular-close) / these (plural-close)#
@@ -61,7 +61,7 @@ DIVPREGUNTAS
 The exclamation and question marks are different from Spanish; they always go just at the end of the sentence.#
 Example: ¿are you happy? (Spanish)
 ¡I’m tired! (Spanish)#
-Correction: are you happy? (English)
+Correction: Are you happy? (English)
 I’m tired! (English)#
 Note: null#
 DIVPREGUNTAS
@@ -72,18 +72,18 @@ my parents began to cry.#
 Note: null#
 DIVPREGUNTAS
 When you do not have a specific pronoun, use it to have a complete and appropriate sentence.#
-Example: consists on doing a nice job#
+Example: Consists on doing a nice job#
 Correction: It consists on doing a nice job.#
 Note: null#
 DIVPREGUNTAS
 Do not use the definite article THE with general words, names of people, means of transportation, institutions, names of countries in singular, among others.#
-Example: the life is too short.#
-Correction: life is too short.#
+Example: The life is too short.#
+Correction: Life is too short.#
 Note: null#
 DIVPREGUNTAS
 Use of "of": When something is composed or made up of something else.#
-Example: the story consists in six parts.#
-Correction: the story consists of six parts.#
+Example: The story consists in six parts.#
+Correction: The story consists of six parts.#
 Note: null#
 DIVPREGUNTAS
 Use of "in": When explaining how something works.#
@@ -150,7 +150,7 @@ Correction: When I was in Tolima, I used to eat “tamales” all the time.#
 Note: null#
 DIVPREGUNTAS
 Remember: adjectives are never pluralized.#
-Example: the girls are beautifuls.
+Example: The girls are beautifuls.
 they are very differents.#
 Correction: The girls are beautiful.
 they are very different.#
@@ -176,8 +176,8 @@ I agree with you.#
 Note: null#
 DIVPREGUNTAS
 The correct expression is: Most of the people/ the majority of people. Most of the cases/ in most cases#
-Example: the most of the people are taking on line classes.#
-Correction: most of the people are taking on line classes.#
+Example: The most of the people are taking on line classes.#
+Correction: Most of the people are taking on line classes.#
 Note: null#
 DIVPREGUNTAS
 After because we use a clause; after because of we use a noun or pronoun.#
@@ -186,8 +186,8 @@ Correction: The river overflowed its banks because of the rain.#
 Note: null#
 DIVPREGUNTAS
 Be careful with the plural of some nouns.#
-Example: cats have seven lifes.#
-Correction: cats have seven lives.#
+Example: Cats have seven lifes.#
+Correction: Cats have seven lives.#
 Note: SOME IMPORTANT IRREGULAR PLURALS TO REMEMBER:
 -	child = children
 -	woman = women    
@@ -210,8 +210,8 @@ Note: SOME IMPORTANT IRREGULAR PLURALS TO REMEMBER:
 -	elf = elves#
 DIVPREGUNTAS
 There is missing a complement.#
-Example: there are three easy steps to lose.#
-Correction: there are three easy steps to lose weight; to lose money.#
+Example: There are three easy steps to lose.#
+Correction: There are three easy steps to lose weight; to lose money.#
 Note: null#
 DIVPREGUNTAS
 The word advice is never pluralized.#
@@ -220,8 +220,8 @@ Correction: I have lots of advice to tell you.#
 Note: null#
 DIVPREGUNTAS
 Avoid exact translation from the Spanish language in regards to expressing possession.#
-Example: this is the life of my son.#
-Correction: this is my son’s life.#
+Example: This is the life of my son.#
+Correction: This is my son’s life.#
 Note: null#
 DIVPREGUNTAS
 Avoid long sentences. Instead, make use of connectors and punctuation marks to avoid misunderstandings or incoherent sentences.#
@@ -281,9 +281,9 @@ I don’t like the table that stands in the kitchen.#
 Note: null#
 DIVPREGUNTAS
 The words somebody (someone), nobody (no one), everybody (everyone), everything, anyone (anybody) are conjugated as in the third person.#
-Example: nobody want coffee.
+Example: Nobody want coffee.
 Everybody are invited.#
-Correction: nobody wants coffee.
+Correction: Nobody wants coffee.
 Everybody is invited.#
 Note: null#
 DIVPREGUNTAS
@@ -300,8 +300,8 @@ Correction: My biggest dream: having a nice wife.#
 Note: null#
 DIVPREGUNTAS
 Omit some words; they are not necessary in your sentence.#
-Example: in making mistakes is a huge disadvantage#
-Correction: making mistakes is a huge disadvantage#
+Example: In making mistakes is a huge disadvantage#
+Correction: Making mistakes is a huge disadvantage#
 Note: Types of relative clauses:
 1. Defining clauses (Restrictive clauses)
 A defining (restrictive) clause is one that is essential to the sense of the sentence.
@@ -346,8 +346,8 @@ Correction: Technology creates more dependent people everyday.#
 Note: null#
 DIVPREGUNTAS
 There is a missing word in your sentence.#
-Example: you must the next steps.#
-Correction: you must follow the next steps.#
+Example: You must the next steps.#
+Correction: You must follow the next steps.#
 Note: null#
 DIVPREGUNTAS
 Do not put period to your title.#
@@ -398,6 +398,6 @@ Correction: There exist many types of friends.#
 Note: null#
 DIVPREGUNTAS
 Be careful with the use of superlatives (-est) and comparatives (er). When a word is more than 2 syllabus you add (MOST/MORE); in one-syllable word we use (EST/ER), but not both at the same time.#
-Example: you are more shorter than me.#
-Correction: you are shorter than me.#
+Example: You are more shorter than me.#
+Correction: You are shorter than me.#
 Note: null#

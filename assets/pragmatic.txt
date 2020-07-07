@@ -14,7 +14,7 @@ Correction: (when writing to your boss) Good afternoon Mr. Jhonson, how are you?
 Note: null#
 DIVPREGUNTAS
 Use the correct pronoun (first, second, third) depending on the type of text you are writing.#
-Example: we need to do something to avoid plagiarism. (argumentative essay)#
+Example: We need to do something to avoid plagiarism. (argumentative essay)#
 Correction: Students need to do something to avoid plagiarism. (argumentative essay)#
 Note: null#
 DIVPREGUNTAS
