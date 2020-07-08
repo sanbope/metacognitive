@@ -1,4 +1,4 @@
-React Native Project
+React Native Project Version especial para Moto G 5
 
 Usa la tecnología expo para compilar el react native code al apk o bunddle
 
