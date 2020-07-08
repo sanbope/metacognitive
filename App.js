@@ -99,7 +99,7 @@ export default class App extends Component {
         <View style={styles.box}>
           <View style={[styles.boxLeft, {backgroundColor: this.state.customBackground,}]}>
             <TextInput 
-              style={{ height: 50, width: 100, borderColor: 'gray', borderWidth: 1, backgroundColor: this.state.customBackground, textAlign: 'center', color: '#000000', fontSize:40}}
+              style={{ height: 50, width: 100, borderColor: 'black', borderBottomWidth: 2, backgroundColor: this.state.customBackground, textAlign: 'center', color: '#000000', fontSize:40}}
               onChangeText={text => this.onChangeText(text)}
               value={this.state.number}
               keyboardType = 'number-pad'
@@ -599,7 +599,7 @@ const styles = StyleSheet.create({
   },
   boxLeft: {
     flexDirection: 'column',
-    height: height,
+    height: height-75,
     width: 100,
     //backgroundColor: background,
   },
