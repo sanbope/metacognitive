@@ -408,8 +408,8 @@ export default class App extends Component {
         break;
       case "authors":
         var authors = "Autoras: Jacqueline García Botero\n"+
-                      "Margarita Alexandra Botero Restrepo\n"+
-                      "Larissa Tatiana Rico Buitragos\n\n"+
+                      "Larissa Tatiana Rico Buitragos\n"+
+                      "Margarita Alexandra Botero Restrepo\n\n"+
                       "Programador: Santiago Botero Peláez\n"+
                       "Armenia, Quindio, Colombia (2020)";
         this.setState({authors: authors});

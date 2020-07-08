@@ -146,7 +146,7 @@ export default class Syntactic {
             'Some people write with a word processor; others write with a pen or pencil.',
             'Are you happy? (English)\n'+
             'I’m tired! (English)\n',
-            '.        One day when I was at home,\n'+
+            '        One day when I was at home,\n'+
             'my parents began to cry.\n',
             'It consists on doing a nice job.',
             'Life is too short.',
