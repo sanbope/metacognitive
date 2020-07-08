@@ -99,7 +99,7 @@ export default class App extends Component {
         <View style={styles.box}>
           <View style={[styles.boxLeft, {backgroundColor: this.state.customBackground,}]}>
             <TextInput 
-              style={{ height: 50, width: 100, borderColor: 'gray', borderWidth: 1, backgroundColor: this.state.customBackground, textAlign: 'center', color: '#000000', fontSize:40}}
+              style={{ height: 50, width: 120, borderColor: 'black', borderBottomWidth: 2, backgroundColor: this.state.customBackground, textAlign: 'center', color: '#000000', fontSize:30}}
               onChangeText={text => this.onChangeText(text)}
               value={this.state.number}
               keyboardType = 'number-pad'
@@ -592,7 +592,7 @@ const styles = StyleSheet.create({
   contentBox: {
     backgroundColor: '#ffff00',
     height: height-75,
-    width: width-50
+    width: width
   },
   box: {
     flexDirection: 'row',
@@ -600,26 +600,26 @@ const styles = StyleSheet.create({
   boxLeft: {
     flexDirection: 'column',
     height: height,
-    width: 100,
+    width: 120,
     //backgroundColor: background,
   },
   boxLeftArrows: {
     flexDirection: 'row',
-    width: 100,
+    width: 120,
     padding: 10,
   },
   boxArrowLeft: {
-    width: 40,
+    width: (120/2)-10,
     paddingRight: 5
   },
   boxArrowRight: {
-    width: 40,
+    width: (120/2)-10,
     paddingLeft: 5
   },
   boxRight: {
     flexDirection: 'column',
     height: height-25,
-    width: width-100,
+    width: width-120,
     //backgroundColor: background
   },
   titles: {
@@ -629,14 +629,14 @@ const styles = StyleSheet.create({
     fontSize: 20,
     //backgroundColor: background,
     fontWeight: 'bold',
-    width: width-100,
+    width: width-120,
   },
   example: {
     height: (height-75-60)/3,
     paddingLeft: 15,
     fontSize: 18,
     //backgroundColor: background,
-    width: width-100,
+    width: width-120,
     textDecorationLine: 'line-through',
   },
   correction: {
@@ -644,7 +644,7 @@ const styles = StyleSheet.create({
     paddingLeft: 15,
     fontSize: 18,
     //backgroundColor: background,
-    width: width-100,
+    width: width-120,
   },
   uses: {
     height: (height-75-60)/3,
@@ -652,7 +652,7 @@ const styles = StyleSheet.create({
     color: '#ff0000',
     fontSize: 18,
     //backgroundColor: background,
-    width: width-100,
+    width: width-120,
   },
   notes: {
     //backgroundColor: '#ffff00',
@@ -665,20 +665,22 @@ const styles = StyleSheet.create({
   },
   boxTop: {
     flexDirection: 'row',
-    height: 50,
-    width: width-100,
+    height: 60,
+    width: width-120,
     justifyContent: 'flex-start',
-    backgroundColor: '#e3aa1a'
+    backgroundColor: '#ffffff'
   },
   topButtons: {
-    width: (width-100)/3,
+    width: (width-120)/3,
     height: 40,
+    maxHeight: 40,
   },
   startedButton: {
     height: height,
     alignContent: "center",
     textAlign: "center",
     textAlignVertical: "center",
+    fontSize: 13,
     color: "#000000",
     backgroundColor: "#eeeeee",
   },
@@ -688,7 +690,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#ffe0f0'
   },
   professor: {
-    width: (width-100)/2,
+    width: (width-120)/2,
     height: 35,
     fontSize: 13,
     textAlign: 'center',
@@ -697,7 +699,7 @@ const styles = StyleSheet.create({
     borderColor: '#000000',
   },
   professorTitle: {
-    width: (width-100)/2,
+    width: (width-120)/2,
     textAlign: 'center',
     textAlignVertical: 'center',
     borderWidth: 2,
